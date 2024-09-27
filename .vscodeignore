@@ -9,5 +9,5 @@ tslint.json
 .travis.yml
 
 .vscode/**
-src/**
-smoke/**
+
+

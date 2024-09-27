@@ -2,12 +2,13 @@
   "name": "vscode-lebab-extreme-edition-69",
   "displayName": "Lebab-EXTREME-EDITION-69",
   "description": "Lebab transpiles your ES5 code to ES2015. or whatever. i don't give a damn",
-  "version": "2.6.99",
+  "version": "2.7.0",
   "publisher": "nehima",
   "license": "The Unlicense",
   "engines": {
     "vscode": "^1.90.0"
   },
+  "type": "module",
   "icon": "icon.png",
   "homepage": "https://github.com/mrmlnc/vscode-lebab/blob/master/README.md",
   "categories": [
@@ -16,7 +17,7 @@
   "activationEvents": [
     "onCommand:lebab.convert"
   ],
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
@@ -62,20 +63,14 @@
   },
   "devDependencies": {
     "@vscode/vsce": "^2.27.0",
-    "tslint": "^6.1.3",
-    "tslint-config-mrmlnc": "^2.1.0",
-    "typescript": "^5.6.2",
+    "esbuild": "^0.24.0",
+    "rimraf": "^6.0.1",
     "vscode": "^1.1.37"
   },
   "dependencies": {
-    "lebab": "^3.2.4",
-    "rimraf": "^6.0.1",
-    "tslib": "^2.7.0"
+    "lebab": "^3.2.4"
   },
   "scripts": {
-    "clean": "rimraf out",
-    "lint": "tslint \"src/**/*.ts\" -p . -t stylish",
-    "compile": "tsc",
     "build": "npm run clean && npm run compile && npm run lint",
     "watch": "npm run clean && npm run compile -- --sourceMap --watch"
   }
