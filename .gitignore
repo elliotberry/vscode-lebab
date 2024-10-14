@@ -3,6 +3,7 @@ logs/
 *.log
 npm-debug.log*
 *.vsix
+dist/
 # IDE & editors
 .idea
 .vscode-test

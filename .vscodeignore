@@ -7,7 +7,8 @@ yarn.lock
 tsconfig.json
 tslint.json
 .travis.yml
-
+src
 .vscode/**
+node_modules
 
 

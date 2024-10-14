@@ -2,13 +2,13 @@
   "name": "vscode-lebab-extreme-edition-69",
   "displayName": "Lebab-EXTREME-EDITION-69",
   "description": "Lebab transpiles your ES5 code to ES2015. or whatever. i don't give a damn",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "publisher": "nehima",
   "license": "The Unlicense",
   "engines": {
     "vscode": "^1.90.0"
   },
-  "type": "module",
+  
   "icon": "icon.png",
   "homepage": "https://github.com/mrmlnc/vscode-lebab/blob/master/README.md",
   "categories": [
@@ -62,7 +62,7 @@
     }
   },
   "devDependencies": {
-    "@vscode/vsce": "^2.27.0",
+    "@vscode/vsce": "^3.1.1",
     "esbuild": "^0.24.0",
     "rimraf": "^6.0.1",
     "vscode": "^1.1.37"
